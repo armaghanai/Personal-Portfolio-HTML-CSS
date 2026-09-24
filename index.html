@@ -3,43 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio-Armaghan</title>
+    <title>Portfolio - Armaghan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #1e293b; background: linear-gradient(rgba(240, 253, 250, 0.75), rgba(240, 253, 250, 0.75)), url('img/bg.jpg') center/cover fixed no-repeat; margin: 0; padding: 20px;">
+<body>
 
     <!-- Header Section -->
-    <header style="text-align: center; margin-bottom: 30px;">
-        <h1 style="color: #0f766e; margin-bottom: 15px; text-shadow: 0 1px 2px rgba(255,255,255,0.8);">Armaghan Mahmood Shams</h1>
+    <header>
+        <h1>Armaghan Mahmood Shams</h1>
         
         <!-- Navigation Menu -->
-        <nav style="background-color: #0f766e; padding: 12px 20px; border-radius: 8px; display: inline-block; box-shadow: 0 4px 6px rgba(15, 118, 110, 0.2);">
-            <a href="index.html" style="color: #ffffff; text-decoration: none; margin: 0 4px; padding: 6px 12px; font-weight: bold; border-radius: 4px; background-color: #042f2e; box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);">Home</a>
-            <a href="hobbies.html" style="color: #ffffff; text-decoration: none; margin: 0 12px; font-weight: bold;">Hobbies</a>
-            <a href="skills.html" style="color: #ffffff; text-decoration: none; margin: 0 12px; font-weight: bold;">Skills</a>
-            <a href="contact.html" style="color: #ffffff; text-decoration: none; margin: 0 12px; font-weight: bold;">Contact Me</a>
-            <a href="gallery.html" style="color: #ffffff; text-decoration: none; margin: 0 12px; font-weight: bold;">Gallery</a>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="gallery.html">Gallery</a>
         </nav>
     </header>
 
     <!-- Main Container -->
-    <main class="container" style="max-width: 1100px; margin: 0 auto; background-color: rgba(255, 255, 255, 0.95); padding: 35px; border-radius: 12px; box-shadow: 0 10px 25px rgba(15, 118, 110, 0.1); border: 1px solid #ccfbf1;">
+    <main class="container">
         
         <!-- Profile Picture Container -->
-        <div style="text-align: center; margin-bottom: 20px;">
-            <img src="img/profile.png" alt="Armaghan Mahmood Shams" style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid #0f766e; object-fit: cover; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="profile-pic-container">
+            <img src="images/profile.png" alt="Armaghan Mahmood Shams">
         </div>
 
-        <p style="font-size: 1.3rem; font-weight: bold; color: #0f766e; margin-top: 0; text-align: center;">Welcome to my Portfolio!</p>
+        <p class="welcome-text">Welcome to my Portfolio!</p>
         
-        <hr style="border: 0; height: 1px; background: #ccfbf1; margin: 20px 0;">
+        <hr class="divider">
 
-        <!-- Side-by-Side Flex Layout -->
-        <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
+        <!-- Side-by-Side Layout using Float & Clear -->
+        <div class="content-wrapper clearfix">
             
             <!-- Left Column: Summary -->
-            <div style="flex: 1; min-width: 300px;">
-                <h2 style="color: #0f766e; margin-top: 0; font-size: 1.25rem;">About Me</h2>
-                <p style="text-align: justify; color: #334155; margin-top: 0;">
+            <div class="column left-col">
+                <h2>About Me</h2>
+                <p class="about-text">
                     Software engineering undergraduate at NUST (3.76/4.0) with hands-on
                     experience building retrieval-augmented generation systems, including a
                     self-hosted RAG assistant for Attock Refinery Limited combining document
@@ -56,35 +57,35 @@
             </div>
 
             <!-- Right Column: Parallel Education Table -->
-            <div style="flex: 1; min-width: 320px;">
-                <h2 style="color: #0f766e; margin-top: 0; font-size: 1.25rem;">Education History</h2>
-                <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <div class="column right-col">
+                <h2>Education History</h2>
+                <table>
                     <thead>
-                        <tr style="background-color: #0f766e; color: #ffffff; text-align: left;">
-                            <th style="padding: 10px; border: 1px solid #0f766e;">Level</th>
-                            <th style="padding: 10px; border: 1px solid #0f766e;">Institution</th>
-                            <th style="padding: 10px; border: 1px solid #0f766e;">Grade / GPA</th>
-                            <th style="padding: 10px; border: 1px solid #0f766e;">Timeline</th>
+                        <tr>
+                            <th>Level</th>
+                            <th>Institution</th>
+                            <th>Grade / GPA</th>
+                            <th>Timeline</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="border-bottom: 1px solid #e2e8f0;">
-                            <td style="padding: 10px; border: 1px solid #e2e8f0; font-weight: bold;">Undergraduate</td>
-                            <td style="padding: 10px; border: 1px solid #e2e8f0;">SEECS, NUST</td>
-                            <td style="padding: 10px; border: 1px solid #e2e8f0;">3.76 / 4.0</td>
-                            <td style="padding: 10px; border: 1px solid #e2e8f0;">2024 - Present</td>
+                        <tr>
+                            <td class="bold-cell">Undergraduate</td>
+                            <td>SEECS, NUST</td>
+                            <td>3.76 / 4.0</td>
+                            <td>2024 - Present</td>
                         </tr>
-                        <tr style="background-color: #f0fdfa; border-bottom: 1px solid #e2e8f0;">
-                            <td style="padding: 10px; border: 1px solid #e2e8f0; font-weight: bold;">A-Levels</td>
-                            <td style="padding: 10px; border: 1px solid #e2e8f0;">Roots Ivy DHA-1</td>
-                            <td style="padding: 10px; border: 1px solid #e2e8f0;">4A*</td>
-                            <td style="padding: 10px; border: 1px solid #e2e8f0;">2021 - 2023</td>
+                        <tr class="highlight-row">
+                            <td class="bold-cell">A-Levels</td>
+                            <td>Roots Ivy DHA-1</td>
+                            <td>4A*</td>
+                            <td>2021 - 2023</td>
                         </tr>
                         <tr>
-                            <td style="padding: 10px; border: 1px solid #e2e8f0; font-weight: bold;">O-Level</td>
-                            <td style="padding: 10px; border: 1px solid #e2e8f0;">Roots School System</td>
-                            <td style="padding: 10px; border: 1px solid #e2e8f0;">7A* 1A</td>
-                            <td style="padding: 10px; border: 1px solid #e2e8f0;">2017 - 2021</td>
+                            <td class="bold-cell">O-Level</td>
+                            <td>Roots School System</td>
+                            <td>7A* 1A</td>
+                            <td>2017 - 2021</td>
                         </tr>
                     </tbody>
                 </table>
@@ -95,7 +96,7 @@
     </main>
 
     <!-- Footer -->
-    <footer style="text-align: center; margin-top: 40px; color: #115e59; font-size: 0.9rem; font-weight: bold;">
+    <footer>
         <p>&copy; 2026 Armaghan. All rights reserved.</p>
     </footer>
     
