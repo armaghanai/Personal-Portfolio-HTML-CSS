@@ -26,4 +26,4 @@ portfolio/
 ├── gallery.html       # Software projects gallery
 ├── contact.html       # Contact information and links
 ├── style.css          # Global external stylesheet
-└── img/               # Asset folder containing images and logos
+└── images/               # Asset folder containing images and logos
