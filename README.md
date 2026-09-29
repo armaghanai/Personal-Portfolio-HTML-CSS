@@ -25,5 +25,6 @@ portfolio/
 ├── hobbies.html       # Personal interests and hobbies
 ├── gallery.html       # Software projects gallery
 ├── contact.html       # Contact information and links
-├── style.css          # Global external stylesheet
+├── css/  
+│   └── style.css       # External stylesheet
 └── images/               # Asset folder containing images and logos
